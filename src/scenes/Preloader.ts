@@ -32,7 +32,13 @@ export class Preloader extends Scene
         //  Load the assets for the game - Replace with your own assets
         this.load.setPath('assets');
 
-        this.load.image('logo', 'logo.png');
+        // Load components
+        this.load.image('cpu', 'components/cpu-preview.png')
+        this.load.image('motherboard', 'components/motherboard-preview.png')
+        this.load.image('ram', 'components/ram-preview.png')
+        this.load.image('hdd', 'components/hdd-preview.png')
+        this.load.image('gpu', 'components/card_grafic-preview.png')
+        this.load.image('pc', 'pc-preview.png')
     }
 
     create ()
